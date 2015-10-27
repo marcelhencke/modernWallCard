@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="latofonts.css" rel="stylesheet">
+		<link href="font-awesome.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
@@ -30,9 +31,14 @@
 				<span id="total_movies">0</span>
 				<span>Update:</span>
 				<span id="update_time">0</span>
+				
+				<div class="control">
+					<a href="javascript:set_view_class('wall-container')"><i class="fa fa-th"></i></a>
+					<a href="javascript:set_view_class('wall-container big-img')"><i class="fa fa-th-large"></i></a>
+					<a href="javascript:set_view_class('card-container')"><i class="fa fa-th-list"></i></a>
+				</div>
 			</div>
 		</div>
-
 
 
 <$MOVIE>	
@@ -46,7 +52,6 @@
 			<div class="movie-info">
 				<h4 class="modal-title"><$MOVIENAME> (<$YEAR>)</h4>
 				<p><$TAGLINE></p>
-				<hr>
 				<p><$PLOT></p>
 			</div>
 		</div>
@@ -104,8 +109,7 @@
 			document.getElementById("update_time").innerHTML = now;
 		</script>
 		<footer>
-				Made in Berlin, Germany<br>
-				Copyright © by Marcel Hencke			
+				Theme made with <i class="fa fa-heart" style="color: #EF7171;"></i> by Marcel Hencke			
 		</footer>
 
 		<!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->

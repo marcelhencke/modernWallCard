@@ -42,6 +42,16 @@ a{
 }
 
 
+/* Control */
+
+.control{
+	float: right;
+}
+.control > a{
+	font-size: 20px;
+	padding: 10px;
+}
+
 /* Movie Boxdesign */
 
 .box{
@@ -80,12 +90,27 @@ a{
 }
 /* Card */
 .card-container > .movie-info{
-	display: block;
+	float: left;
+	height: 230px;
+    padding: 10px;
+    width: 295px;
+    background: #F8F8F8;
+    color:#333333;
+}
+.card-container > .movie-info > p{
+	color: #9e9e9e;
+	max-height: 153px;
+	overflow: hidden;
 }
 
-.card-container .box{
+.card-container > img{
+	float: left;
+}
+
+.box .card-container {
+	border-radius: 5px;
 	height: 230px;
-	width: 553px;
+	width: 440px;
 }
 
 
