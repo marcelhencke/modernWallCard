@@ -1,4 +1,3 @@
 - Bilder via JS laden
-- Lato Font cleanen
 - Suche via JS
 - Config File
