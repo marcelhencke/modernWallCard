@@ -124,6 +124,9 @@ a{
 .wall-container > .movie-info{
 	display: none;
 }
+.wall-container > .movie-title{
+	display: none;
+}
 
 .wall-container .box{
 	height: 230px;
@@ -133,7 +136,30 @@ a{
 	height: 300px;
 	width: 200px;
 }
+/* Wall with title */
+.wall-container.wall-title > .movie-title{
+	display: block;
+    color: #333;
+    font-size: 15px;
+    text-align: center;
+    font-family: LatoWebLight;
+    margin-bottom: 6px;
+
+}
+.wall-container.wall-title{
+	box-shadow: none;
+    width: 153px;
+    overflow: hidden;
+}
+.wall-container.wall-title > img{
+	box-shadow: 0 0 5px #555;
+	border-radius: 3px;
+}
+
 /* Card */
+.card-container > .movie-title{
+	display: none;
+}
 .card-container > .movie-info{
 	float: left;
 	height: 230px;

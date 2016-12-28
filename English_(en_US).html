@@ -65,6 +65,7 @@
 					<a href="javascript:set_view_class('wall-container')"><i class="fa fa-th"></i></a>
 					<a href="javascript:set_view_class('wall-container big-img')"><i class="fa fa-th-large"></i></a>
 					<a href="javascript:set_view_class('card-container')"><i class="fa fa-th-list"></i></a>
+					<a href="javascript:set_view_class('wall-container wall-title')"><i class="fa fa-font"></i></a>
 				</div>
 			</div>
 		</nav>
@@ -78,6 +79,7 @@
 	<$$MOVIE>	
 		<a href="" data-toggle="modal" data-target="#modal_info_<$COUNT>">
 		<div class="box wall-container" >
+			<div class="movie-title"><$TITLE> (<$YEAR>)</div>
 			<img src="./<$POSTER>" alt="No Photo Available" onError="this.src='default-poster.png';"/>
 			<div class="movie-info">
 				<h4 class="modal-title"><$TITLE> (<$YEAR>)</h4>
@@ -150,6 +152,7 @@
 
 		<a href="" data-toggle="modal" data-target="#modal_info_<$COUNT>">
 		<div class="box wall-container" >
+			<div class="movie-title"><$TITLE><span class="non_status<$STATUS>"> (<$STATUS>)</span></div>
 			<img src="./<$POSTER>" alt="No Photo Available" onError="this.src='default-poster.png';"/>
 			<div class="movie-info">
 				<h4 class="modal-title"><$TITLE><span class="non_status<$STATUS>"> (<$STATUS>)</span></h4>
